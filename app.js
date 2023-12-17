@@ -11,5 +11,10 @@ new Vue({
         getFunction: ()=> {
             return 'Hello Vue';
         }
+    },
+    methods: {
+        getValue(){
+            return this.name
+        }
     }
 })
