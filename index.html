@@ -9,7 +9,9 @@
   <div id="app">
     <!-- Your Vue.js app will be mounted here -->
     <h2>{{name}}</h2>
-    <p>{{language}}</p>
+    <p v-for="(language, index) in language">
+      {{index + 1 }} : {{language}}
+    </p>
     <p>{{frameWork.JavaScript}}</p>
     <p>{{getFunction()}}</p>
     <hr>
